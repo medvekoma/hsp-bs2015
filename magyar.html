@@ -34,6 +34,10 @@
 
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+	
+	<!-- image gallery -->
+	<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
@@ -57,7 +61,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Budasprint 2015</a>
+          <a class="navbar-brand" href="magyar.html">Budasprint 2015</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -220,11 +224,41 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12">
-						<strong>Hamarosan</strong>
+					<div id="links">
+						<a href="img/album1/kk01.jpg" title="Budasprint" data-gallery>
+							<img class="img-thumbnail" src="img/album1/thumbnails/kk01.jpg" alt="Budasprint">
+						</a>
+						<a href="img/album1/kk02.jpg" title="Budasprint" data-gallery>
+							<img class="img-thumbnail" src="img/album1/thumbnails/kk02.jpg" alt="Budasprint">
+						</a>
+						<a href="img/album1/kk03.jpg" title="Budasprint" data-gallery>
+							<img class="img-thumbnail" src="img/album1/thumbnails/kk03.jpg" alt="Budasprint">
+						</a>
+						<a href="img/album1/kk04.jpg" title="Budasprint" data-gallery>
+							<img class="img-thumbnail" src="img/album1/thumbnails/kk04.jpg" alt="Budasprint">
+						</a>
+						<a href="img/album1/kk05.jpg" title="Budasprint" data-gallery>
+							<img class="img-thumbnail" src="img/album1/thumbnails/kk05.jpg" alt="Budasprint">
+						</a>
+						<a href="img/album1/kk06.jpg" title="Budasprint" data-gallery>
+							<img class="img-thumbnail" src="img/album1/thumbnails/kk06.jpg" alt="Budasprint">
+						</a>
+						<a href="img/album1/kk07.jpg" title="Budasprint" data-gallery>
+							<img class="img-thumbnail" src="img/album1/thumbnails/kk07.jpg" alt="Budasprint">
+						</a>
+						<a href="img/album1/kk08.jpg" title="Budasprint" data-gallery>
+							<img class="img-thumbnail" src="img/album1/thumbnails/kk08.jpg" alt="Budasprint">
+						</a>
+						<a href="img/album1/kk10.jpg" title="Budasprint" data-gallery>
+							<img class="img-thumbnail" src="img/album1/thumbnails/kk10.jpg" alt="Budasprint">
+						</a>
+						<a href="img/album1/kk13.jpg" title="Budasprint" data-gallery>
+							<img class="img-thumbnail" src="img/album1/thumbnails/kk13.jpg" alt="Budasprint">
+						</a>
+						<a href="img/album1/kk14.jpg" title="Budasprint" data-gallery>
+							<img class="img-thumbnail" src="img/album1/thumbnails/kk14.jpg" alt="Budasprint">
+						</a>
 					</div>
-				</div>
-				<h1>&nbsp;</h1>
 			</div>
         </div>
     </div>
@@ -247,6 +281,40 @@
         </div>
     </nav>
 
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+	<div id="blueimp-gallery" class="blueimp-gallery">
+		<!-- The container for the modal slides -->
+		<div class="slides"></div>
+		<!-- Controls for the borderless lightbox -->
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+		<!-- The modal dialog, which will be used to wrap the lightbox content -->
+		<div class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-hidden="true">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body next"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left prev">
+							<i class="glyphicon glyphicon-chevron-left"></i>
+							Előző
+						</button>
+						<button type="button" class="btn btn-primary next">
+							Következő
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -261,6 +329,10 @@
     <!-- Javascripts
     ================================================== -->
     <script type="text/javascript" src="js/main.js"></script>
+	
+	<!-- image gallery -->
+	<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+	<script src="js/bootstrap-image-gallery.min.js"></script>
 
   </body>
 </html>
